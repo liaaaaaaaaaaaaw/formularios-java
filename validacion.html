@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <label for="">Usuario</label><br><br>
+    <input type="text" id="user" name="frame" placeholder="Ingrese usuario"><br><br>
+    <label for="">contraseña </label><br><br>
+    <input type="password" id="numero2" name="frame" placeholder="Ingrese contraseña"><br><br>
+</form>
+<button onclick="capturar()">Enviar</button>
+<script>
+    let intentos=0
+    let contraseñaco="Pamela"
+    function capturar(){
+        const contraseñaIngresada=document.getElementById("numero2").value;
+        const usuario=document.getElementById("user").value;
+        
+        if (contraseñaIngresada==contraseñaco){
+        }else{
+            intentos++
+            if (intentos==3){
+                document.write("Error");
+            }
+        }
+    }
+</script>
+</body>
+
+</html>

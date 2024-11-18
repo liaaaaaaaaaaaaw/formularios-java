@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Numero: </label><br><br>
+        <input type="number" id="numero1" name="frame" placeholder="Ingrese nombre"><br><br>
+    </form>
+    <button onclick="capturar()">Enviar</button>
+    <script>
+        function capturar(){
+            const numero1=parseInt(document.getElementById("numero1").value);
+            let f=1
+            for (i=1;i<=numero1;i++){
+                f=f*i
+            }
+            document.write("El factorial es "+f);
+        }
+    </script>
+</body>
+
+</html>
